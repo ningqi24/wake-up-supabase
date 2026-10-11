@@ -2,7 +2,7 @@ name: Wake Up Supabase
 
 on:
   schedule:
-    - cron: "0 6 * * *"   # Runs once per day at 06:00 UTC
+    - cron: 0 6 */3 * *   # 每 3 天在 06:00 UTC 运行一次
   workflow_dispatch:       # Allows manual runs from the Actions tab
 
 jobs:
